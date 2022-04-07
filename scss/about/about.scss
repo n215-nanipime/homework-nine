@@ -1,0 +1,61 @@
+.about {
+  margin-top: 7%;
+  margin-bottom: 180px;
+
+  .about-header {
+    h1 {
+      margin-bottom: 2px;
+      font-family: mySecondFont, myThirdFont;
+      font-size: 40px;
+      font-style: bold;
+    }
+    .border-bottom {
+      width: 600px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 3%;
+    }
+    .about-info {
+      display: flex;
+
+      img {
+        width: 40%;
+        margin-bottom: 2%;
+      }
+
+      p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 5%;
+      }
+    }
+  }
+}
+
+// media query that breaks at
+@media all and (max-width: 800px) {
+  .about {
+    text-align: center;
+    flex-direction: column;
+    .about-header {
+      .border-bottom {
+        margin: 0 auto;
+        margin-bottom: 3%;
+      }
+      .about-info {
+        flex-direction: column;
+        img {
+          margin: 0 auto;
+          margin-bottom: 3%;
+        }
+        p {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
